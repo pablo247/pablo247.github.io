@@ -1,0 +1,84 @@
+// ####################################################################################
+// Star Framework UIKit
+
+// Custom variables and variable overwrites.
+$global-primary-background: #a8123d;
+$global-secondary-background: #ebe7e0;
+$global-link-color: #a8123e;
+$global-link-hover-color: #a8123e;
+$global-color: rgba(0,0,0,.75);
+$global-border: rgba(34,36,38,.15);
+
+
+// End Framework UIKit
+// ####################################################################################
+
+$colors : (
+	"85543d" : #85543d,
+	"c19e74" : #c19e74,
+	"d3b792" : #d3b792,
+	"ebe7e0" : #ebe7e0,
+	"821800" : #821800,
+	"6d0c2a" : #6d0c2a,
+	"691c32" : #691c32,
+	"840f31" : #840f31,
+	"9b1237" : #9b1237,
+	"9f1c35" : #9f1c35,
+	"c62038" : #c62038,
+    "a8123d" : #a8123d,
+    "a8123e" : #a8123e,
+	"3c4145" : #3c4145,
+	"5d666a" : #5d666a,
+    "636569" : #636569,
+    "60605f" : #60605f,
+	"807976" : #807976,
+	"aeaeae" : #aeaeae,
+	"dedde2" : #dedde2,
+	"eaeaed" : #eaeaed,
+	"dedde3" : #dedde3,
+	"f1f1f1" : #f1f1f1,
+	"ffffff" : #ffffff,
+
+	"primary-light" : lighten(#a85d30, 10%),
+	"primary" : #a85d30,
+	"primary-dark" : darken(#a85d30, 10%),
+	"secondary-light" : lighten(#421908, 10%),
+	"secondary" : #421908,
+	"secondary-dark" : darken(#421908, 10%),
+	"tertiary-light" : lighten(#ce8b5c, 10%),
+	"tertiary" : #ce8b5c,
+	"tertiary-dark" : darken(#ce8b5c, 10%),
+	"text-light" : lighten(#2e2e2e, 10%),
+	"text" : #2e2e2e,
+	"text-dark" : darken(#2e2e2e, 10%),
+);
+
+$weights : (
+	"extra-light" : 200,
+	"extralight" : 200,
+	"light" : 300,
+	"regular" : 400,
+	// "medium" : 500,
+	"semi-bold" : 600,
+	"semibold" : 600,
+	"bold" : 700,
+);
+
+$sizes : (
+	"10" : 10px,
+	"12" : 12px,
+	"14" : 14px,
+	"15" : 15px,
+	"16" : 16px,
+	"18" : 18px,
+	"23" : 23px,
+	"25" : 25px,
+	"26" : 26px,
+	"27" : 27px,
+	"35" : 35px,
+	"42" : 42px,
+);
+
+$sides: 'bottom', 'left', 'right', 'top';
+
+$border-radius: 0.25rem;

@@ -1,0 +1,23 @@
+.uk-table th
+{
+    padding: 10px 12px;
+    font-weight: bold;
+    color: map-get($colors, '807976');
+    text-transform: uppercase;
+}
+
+.uk-table tbody
+{
+    font-size: map-get($sizes, '14');
+}
+
+.uk-table-hover > tr:hover,
+.uk-table-hover tbody tr:hover
+{
+    background: lighten(map-get($colors, "d3b792"), 25%);
+}
+
+.uk-table-sticky
+{
+    margin-top: 0;
+}

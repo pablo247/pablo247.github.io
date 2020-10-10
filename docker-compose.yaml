@@ -1,0 +1,22 @@
+version: '3.1'
+
+services:
+  app:
+    build:
+      context: ${PWD}
+      dockerfile: ${DOCKERFILE_NAME}
+      labels:
+        - "com.puebla.${CONTAINER_NAME}"
+        - "com.puebla.author=Pablo De Jesús Moreno"
+        - "com.puebla.email=pablo.24726@gmail.com"
+        - "com.puebla.version=1.2.0"
+        - "com.puebla.release-date=2020-09-09"
+        - "com.puebla.version.is-production=false"
+      args:
+        - WORKDIR_WEB=${WORKDIR_WEB}
+        - VIRTUALHOST_FILE=${VIRTUALHOST_FILE}
+    container_name: ${CONTAINER_NAME}
+    volumes:
+      - ${PWD}${VOLUME_PROJECT}:${WORKDIR_WEB}
+    ports:
+      - ${PORT_WEB}:80

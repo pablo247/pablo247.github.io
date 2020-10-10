@@ -1,0 +1,63 @@
+.uk-select.ss-main
+{
+
+    &:not([multiple]):not([size])
+    {
+        background-image: inherit;
+        padding: 0;
+        padding-right: 5px;
+    }
+
+}
+
+.ss-content .ss-search input:focus
+{
+    box-shadow:0 0 5px map-get($colors, 'a8123e');
+}
+
+.ss-main .ss-content .ss-search .ss-addable {
+	font-size: inherit;
+}
+
+.ss-main .ss-multi-selected .ss-add {
+	margin: 0px 12px 0 5px;
+}
+
+// .ss-main { border-bottom: 1px solid $border-4; }
+
+.ss-main .ss-multi-selected,
+.ss-main .ss-single-selected
+{
+	height: 40px;
+    vertical-align: middle;
+	max-width: 100%;
+    width: 100%;
+    padding: 0 0 0 10px;
+    color: #707070;
+    transition: 0.2s ease-in-out;
+    transition-property: color, background-color, border;
+
+
+	align-items: center;
+	line-height: 1.5;
+
+	background: transparent;
+	border: none;
+	border-radius: 0;
+
+	& .placeholder
+	{
+        color: rgba(0, 0, 0, 0.75);
+		height: 40px;
+        vertical-align: middle;
+
+        & .ss-disabled
+        {
+            color: #999;
+        }
+	}
+}
+
+.ss-main .ss-multi-selected .ss-values .ss-value {
+	background-color: map-get($colors, 'a8123d');
+}

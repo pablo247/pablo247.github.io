@@ -1,0 +1,59 @@
+:root
+{
+	@each $name, $color in $colors
+	{
+		--#{$name}: #{$color};
+	}
+}
+
+:focus
+{
+	outline: dashed 1px map-get($colors, "primary-lighten") !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+.uk-h1,
+.uk-h2,
+.uk-h3,
+.uk-h4,
+.uk-h5
+{ color: map-get($colors, "secondary"); }
+
+@each $name, $color in $colors
+{
+	.c-#{$name} { color: $color; }
+	.c-#{$name}\:h:hover { color: $color; }
+
+	.bgc-#{$name} { background-color: $color; }
+	.bgc-#{$name}\:h:hover { background-color: $color; }
+
+	.bc-#{$name} { border-color: $color; }
+}
+
+@for $i from 1 through 5 {
+	.b-solid-#{$i} {
+		border-style: solid;
+		border-width: $i;
+	}
+
+	.b-solid-#{$i}-remove {
+		border-style: inherit;
+		border-width: inherit;
+	}
+
+	@each $side in $sides {
+		.b-solid-#{$i}-#{$side} {
+			border-#{$side}-style: solid;
+			border-#{$side}-width: #{$i+'px'};
+		}
+
+		.b-solid-#{$i}-#{$side}-remove {
+			border-#{$side}-style: inherit;
+			border-#{$side}-width: inherit;
+		}
+	}
+}

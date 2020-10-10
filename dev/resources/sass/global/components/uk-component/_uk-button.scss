@@ -1,0 +1,32 @@
+.uk-button
+{
+	border-radius: $border-radius;
+
+	&-primary
+	{
+		background-color: map-get($colors, 'c62038');
+    	border-color: map-get($colors, 'c62038');
+		transition: background-color 300ms ease 50ms;
+
+		&:hover,
+		&:focus
+		{
+			background-color: darken(map-get($colors, 'c62038'), 10%);
+    		border-color: darken(map-get($colors, 'c62038'), 10%);
+		}
+	}
+
+	&-secondary
+	{
+		background-color: map-get($colors, 'c19e74');
+    	border-color: map-get($colors, 'c19e74');
+		transition: background-color 300ms ease 50ms;
+
+		&:hover,
+		&:focus
+		{
+			background-color: darken(map-get($colors, 'c19e74'), 10%);
+    		border-color: darken(map-get($colors, 'c19e74'), 10%);
+		}
+	}
+}

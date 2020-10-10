@@ -1,0 +1,35 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+
+html
+{
+    color: map-get($colors, 'text');
+    font-family: 'Nunito', sans-serif !important;
+    font-size: 16px;
+    font-weight: map-get($weights, 'regular');
+}
+
+$scales-hs :
+(
+    "h1" : 3.052em,
+    "h2" : 2.441em,
+    "h3" : 1.953em,
+    "h4" : 1.563em,
+    "h5" : 1.25em,
+    "h6" : 1em,
+);
+
+@each $name-sacle, $scale in $scales-hs
+{
+    #{$name-sacle}, .uk-#{$name-sacle}
+    { font: map-get($weights, 'bold') $scale 'Nunito'; }
+}
+
+@each $weight-name, $weight in $weights
+{
+	.fw-#{$weight-name}, .fw-#{$weight} { font-weight: $weight; }
+}
+
+@each $size-name, $size in $sizes
+{
+	.fs-#{$size-name} { font-size: $size; }
+}

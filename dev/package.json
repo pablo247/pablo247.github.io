@@ -1,0 +1,38 @@
+{
+  "name": "portfolio",
+  "version": "1.0.0",
+  "description": "Project assets",
+  "main": "index.js",
+  "scripts": {
+    "dev": "npm run development",
+    "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "watch": "npm run development -- --watch",
+    "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
+    "prod": "npm run production",
+    "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/pablo247/pablo247.github.io.git"
+  },
+  "keywords": [
+    "portfolio",
+    "curriculum"
+  ],
+  "author": "Pablo De Jesús Moreno <pablo.24726@gmail.com>",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/pablo247/pablo247.github.io/issues"
+  },
+  "homepage": "https://github.com/pablo247/pablo247.github.io#readme",
+  "devDependencies": {
+    "cross-env": "^7.0.2",
+    "laravel-mix": "^5.0.6",
+    "laravel-mix-merge-manifest": "^0.1.2",
+    "resolve-url-loader": "^3.1.0",
+    "sass": "^1.27.0",
+    "sass-loader": "^8.0.2",
+    "uikit": "^3.5.8",
+    "vue-template-compiler": "^2.6.12"
+  }
+}

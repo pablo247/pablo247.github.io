@@ -1,0 +1,70 @@
+// ####################################################################################
+// Inicio de Arquitectura SMACSS combinada con ITCSS
+
+// config
+@import "./../global/config/functions";
+@import "./../global/config/variables";
+
+// End de Arquitectura SMACSS combinada con ITCSS
+// ####################################################################################
+
+
+// ####################################################################################
+// Star Framework UIKit
+
+// 1. Your custom variables and variable overwrites.
+// $global-link-color: #DA7D02;
+
+// 2. Import default variables and available mixins.
+@import "~uikit/src/scss/variables-theme.scss";
+@import "~uikit/src/scss/mixins-theme.scss";
+
+// 3. Your custom mixin overwrites.
+// @mixin hook-card() { color: #000; }
+
+// End Framework UIKit
+// ####################################################################################
+
+
+// ####################################################################################
+// Inicio de Arquitectura SMACSS combinada con ITCSS
+
+// config
+@import "./../global/config/mixins";
+
+// End de Arquitectura SMACSS combinada con ITCSS
+// ####################################################################################
+
+
+// ####################################################################################
+// Star Framework UIKit
+
+// 4. Import UIkit.
+@import "~uikit/src/scss/uikit-theme.scss";
+
+// End Framework UIKit
+// ####################################################################################
+
+
+// ####################################################################################
+// Inicio de Arquitectura SMACSS combinada con ITCSS
+
+// base
+@import "./../global/base/base";
+
+// layout
+@import "layout/layout";
+
+// components
+@import "components/components";
+
+// theme
+@import "theme/icons";
+@import "theme/typography";
+@import "theme/theme";
+
+// utils
+@import "./../global/utils/utils";
+
+// End de Arquitectura SMACSS combinada con ITCSS
+// ####################################################################################
