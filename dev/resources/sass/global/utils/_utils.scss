@@ -8,14 +8,14 @@ $properties: 'margin', 'padding';
 
 @each $property in $properties
 {
-    @for $i from 1 to 10
+    @for $i from 1 to 50
     {
         .#{$property}-#{$i}
         { #{$property}: #{$i + 'px'}; }
 
         @each $side in $sides
         {
-            .#{$property}-#{$side}-#{$i}
+            .#{$property}-#{$i}-#{$side}
             { #{$property}-#{$side}: #{$i + 'px'}; }
         }
     }

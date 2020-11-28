@@ -4,6 +4,12 @@
   "description": "Project assets",
   "main": "index.js",
   "scripts": {
+    "install-uk-icons": "cd ./node_modules/uikit && npm install",
+    "rm-uk-icons": "rimraf ./node_modules/uikit/custom",
+    "cp-uk-icons": "copyfiles -u 2 resources/uk-custom-icons/* node_modules/uikit/custom/icons",
+    "compile-uk-icons": "npm run --prefix ./node_modules/uikit compile-js",
+    "uk-icons": "npm run install-uk-icons && npm run rm-uk-icons &&  npm run cp-uk-icons && npm run compile-uk-icons",
+
     "dev": "npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
@@ -26,10 +32,12 @@
   },
   "homepage": "https://github.com/pablo247/pablo247.github.io#readme",
   "devDependencies": {
+    "copyfiles": "^2.4.0",
     "cross-env": "^7.0.2",
     "laravel-mix": "^5.0.6",
     "laravel-mix-merge-manifest": "^0.1.2",
     "resolve-url-loader": "^3.1.0",
+    "rimraf": "^3.0.2",
     "sass": "^1.27.0",
     "sass-loader": "^8.0.2",
     "uikit": "^3.5.8",

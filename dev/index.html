@@ -8,14 +8,209 @@
 </head>
 <body>
 
-	<header></header>
-	<main>
-		<h1>Portafolio</h1>
-		<p>Pablo De Jesús Moreno</p>
+	<header id="home" class="bgc-tertiary uk-section header-bgi uk-position-relative uk-padding-remove-top">
+		<div class="uk-position-relative">
+			<div id="uk-sticky-menu" class="uk-margin-medium-bottom menu__sticky" uk-sticky>
+				<div class="uk-container">
+					<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+						<div class="uk-navbar-right">
+							<ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+								<li><a href="#home">
+									<span>Home</span>
+								</a></li>
+								<li><a href="#perfil">
+									<span>Perfil</span>
+								</a></li>
+								<li><a href="#habilidades">
+									<span>Habilidades</span>
+								</a></li>
+								<li><a href="#educacion">
+									<span>Educación</span>
+								</a></li>
+								<li><a href="#tecnologias">
+									<span>Tecnologías</span>
+								</a></li>
+								<li><a href="#experiencia">
+									<span>Experiencia Profesional</span>
+								</a></li>
+							</ul>
+						</div>
+					</nav>
+				</div>
+			</div>
+			<div class="uk-container">
+				<div class="uk-grid-large" uk-grid>
+					<div class="uk-width-1-5@m uk-width-1-3@s uk-width-1-2 uk-margin-auto">
+						<div>
+							<img class="uk-border-rounded" src="assets/images/selfi.jpg" alt="Foto de Pablo De Jesús Moreno" tabindex="1">
+						</div>
+					</div>
+					<div class="uk-width-3-4@m uk-width-1-1">
+						<div class="uk-text-right@m uk-text-center">
+							<h1 class="c-secondary-dark" tabindex="1">Pablo De Jesús Moreno</h1>
+							<p class="uk-h4 uk-border-pill uk-padding-small padding-40-right padding-40-left uk-display-inline-block b-solid-4-right b-solid-4-bottom c-secondary-dark" tabindex="1">Desarrollador de Software</p>
+							<div class="uk-margin-top uk-flex-center uk-flex-right@m" uk-grid>
+								<div>
+									<a href="https://www.linkedin.com/in/pablo-de-jes%C3%BAs-578a281a9/" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: linkedin; ratio: 1.2" uk-tooltip="Linkedin"></a>
+								</div>
+								<div>
+									<a href="https://github.com/pablo247" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: github; ratio: 1.2" uk-tooltip="Github"></a>
+								</div>
+								<div>
+									<a href="mailto:pablo.24726@gmail.com" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: mail; ratio: 1.2" uk-tooltip="Correo Electrónico"></a>
+								</div>
+								<div>
+									<a href="#" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: cv; ratio: 1.2" uk-tooltip="Curriculum"></a>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</header>
+	<main class="uk-section">
+		<div class="uk-container uk-margin-large">
+			<dir uk-grid class="uk-grid-divider">
+				<div class="uk-width-2-3@m uk-width-1-1">
+					<h2 id="perfil">Perfil</h2>
+					<p>Soy Ingeniero en Tecnologías de la Información y Comunicación y desde 2013 tengo experiencia en el desarrollo de software.</p>
+					<p>He colaborado en proyectos como Freelance, he auditado sitios web en busca de vulnerabilidades y he impartido un taller sobre el desarrollo web en la Universidad Tecnológica de Puebla.</p>
+					<p>Soy una persona comprometida con mi trabajo y me gusta estar actualizado y aprender nuevas tecnologías.</p>
+				</div>
+				<div class="uk-width-1-3@m uk-width-1-1">
+					<h2 id="habilidades">Habilidades</h2>
+					<ul class="uk-list uk-list-hyphen">
+						<li>Programación Web Frontend</li>
+						<li>Programación Web Backend</li>
+						<li>Maquetación Web</li>
+						<li>Seguridad Informatica</li>
+						<li>Servidores Linux</li>
+						<li>Ingles básico - intermedio</li>
+					</ul>
+				</div>
+			</dir>
+		</div>
+		<div class="uk-container uk-margin-large">
+			<h2 id="educacion">Educación</h2>
+			<ul class="uk-list uk-list-divider">
+				<li>
+					<p>
+						<b>Ingeniero en Tecnologías de la Información y Comunicación</b>
+						<span class="uk-margin-small-left uk-margin-small-right">|</span>
+						<b>2014 - 2016</b>
+					</p>
+					<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+				</li>
+				<li>
+					<p>
+						<b>Técnico Superior Universitario en Tecnologías de la Información y Comunicación</b>
+						<span class="uk-margin-small-left uk-margin-small-right">|</span>
+						<b>2012 - 2014</b>
+					</p>
+					<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+				</li>
+			</ul>
+		</div>
+		<div class="uk-container uk-margin-large">
+			<h2 id="tecnologias">Tecnologías</h2>
+			<div class="uk-column-1-4@m uk-column-1-2">
+				<p>HTML</p>
+				<p>CSS</p>
+				<p>Sass</p>
+				<p>JavaScript</p>
+				<p>JQuery</p>
+				<p>Vue</p>
+				<p>PHP</p>
+				<p>Laravel</p>
+				<p>Joomla</p>
+				<p>Python</p>
+				<p>Django</p>
+				<p>Java</p>
+				<p>Mysql</p>
+				<p>PostgreSQL</p>
+				<p>Elasticsearch</p>
+				<p>Git</p>
+				<p>Markdown</p>
+				<p>Sistemas operativos MSDOS y Unix</p>
+				<p>Servidores Linux (CentOS)</p>
+				<p>Seguridad Informática</p>
+			</div>
+		</div>
+		<div class="uk-container uk-margin-large">
+			<h2 id="experiencia">Experinecia Profesional</h2>
+			<div class="uk-container uk-container-small">
+				<ul class="uk-list uk-list-divider">
+					<li>
+						<p>
+							<b>Taller “Planificación y Desarrollo de un sitio web”</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2019, 07 Ene – 2019, 11 Ene</b>
+						</p>
+						<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+						<p class="uk-margin-left">Taller impartido a los alumnos de 5° Cuatrimestre "Planificación y desarrollo de un sitio web".</p>
+					</li>
+					<li>
+						<p>
+							<b>Analista de Sistemas</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2016, Feb – Actual</b>
+						</p>
+						<p class="uk-margin-left">Secretaría de Administración del Gobierno del Estado de Puebla.</p>
+						<p class="uk-margin-left">Desarrollo, mantenimiento y seguridad de los portales de Gobierno del Estado de Puebla.</p>
+					</li>
+					<li>
+						<p>
+							<b>Practicante de Sistemas</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2016, Ene – 2016, Abr</b>
+						</p>
+						<p class="uk-margin-left">Secretaría de Finanzas y Administración del Gobierno del Estado de Puebla.</p>
+						<p class="uk-margin-left">Accesibilidad a portales de Gobierno del Estado de Puebla.</p>
+					</li>
+					<li>
+						<p>
+							<b>Desarrollador Web</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2014, May – 2015, May</b>
+						</p>
+						<p class="uk-margin-left">Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE).</p>
+						<p class="uk-margin-left">Página web en intranet para la “Evaluación en línea de algoritmos para el cálculo de testores irreducibles y reductos (TT-LAB)” y automatización de la evaluación de los algoritmos.</p>
+					</li>
+					<li>
+						<p>
+							<b>Practicante de Sistemas</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2014, Ene – 2014 Abr</b>
+						</p>
+						<p class="uk-margin-left">T-Systems México, S.A. de C.V.</p>
+						<p class="uk-margin-left">Colaboración en diseño de página web interna.</p>
+					</li>
+					<li>
+						<p>
+							<b>Desarrollador de Sistemas</b>
+							<span class="uk-margin-small-left uk-margin-small-right">|</span>
+							<b>2013, Sep – 2013 Dic</b>
+						</p>
+						<p class="uk-margin-left">Presidencia de la Comunidad de San Pedro, Tlaxcala.</p>
+						<p class="uk-margin-left">Desarrollo de sistema para el “Control del Agua Potable”.</p>
+					</li>
+				</ul>
+			</div>
+		</div>
 	</main>
 	<footer></footer>
 
 	<script src="assets/js/app.js"></script>
+	<!-- Global site tag (gtag.js) - Google Analytics -->
+	<script async src="https://www.googletagmanager.com/gtag/js?id=G-JKLTR74TFX"></script>
+	<script>
+	window.dataLayer = window.dataLayer || [];
+	function gtag(){dataLayer.push(arguments);}
+	gtag('js', new Date());
+
+	gtag('config', 'G-JKLTR74TFX');
+	</script>
 
 </body>
 </html>

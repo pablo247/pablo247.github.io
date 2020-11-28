@@ -13,4 +13,5 @@ try {
 try {
     // require('./../global/components/component_example');
     // require('./components/component_example');
+    require('./components/menu');
 } catch (error) { }

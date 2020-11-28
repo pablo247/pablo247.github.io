@@ -1,11 +1,10 @@
-@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@200;300;400;600;700&display=swap');
+@import "typography/nunito";
 
-html
+html,
+body
 {
     color: map-get($colors, 'text');
-    font-family: 'Nunito', sans-serif !important;
-    font-size: 16px;
-    font-weight: map-get($weights, 'regular');
+    font: map-get($weights, 'regular') 16px Nunito;
 }
 
 $scales-hs :
@@ -21,7 +20,9 @@ $scales-hs :
 @each $name-sacle, $scale in $scales-hs
 {
     #{$name-sacle}, .uk-#{$name-sacle}
-    { font: map-get($weights, 'bold') $scale 'Nunito'; }
+    {
+        font: map-get($weights, 'bold') $scale 'Nunito', sans-serif !important;
+    }
 }
 
 @each $weight-name, $weight in $weights

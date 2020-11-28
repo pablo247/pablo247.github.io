@@ -1,0 +1,54 @@
+$time: 300ms;
+
+.menu__sticky
+{
+	transition: all #{$time} ease-in;
+
+	& .uk-navbar-nav > li > a
+	{
+		color: map-get($colors, 'secondary-dark');
+		transition: all #{$time} ease-in 50ms;
+	}
+
+	& .uk-navbar-nav > li:hover > a,
+	& .uk-navbar-nav > li > a:focus,
+	& .uk-navbar-nav > li > a.uk-open
+	{
+		color: map-get($colors, 'secondary-light');
+	}
+
+	& .uk-navbar-nav > li.uk-active > a
+	{
+		color: map-get($colors, 'secondary-light');
+
+		& span
+		{
+			border-bottom: 1px solid map-get($colors, 'secondary-light');
+		}
+	}
+
+	&.menu__sticky--dark
+	{
+		& .uk-navbar-nav > li > a
+		{
+			color: map-get($colors, 'tertiary-light');
+		}
+
+		& .uk-navbar-nav > li:hover > a,
+		& .uk-navbar-nav > li > a:focus,
+		& .uk-navbar-nav > li > a.uk-open
+		{
+			color: map-get($colors, 'tertiary-dark');
+		}
+
+		& .uk-navbar-nav > li.uk-active > a
+		{
+			color: map-get($colors, 'tertiary-dark');
+
+			& span
+			{
+				border-bottom: 1px solid map-get($colors, 'tertiary-dark');
+			}
+		}
+	}
+}

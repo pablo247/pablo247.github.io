@@ -7,7 +7,8 @@ $global-secondary-background: #ebe7e0;
 $global-link-color: #a8123e;
 $global-link-hover-color: #a8123e;
 $global-color: rgba(0,0,0,.75);
-$global-border: rgba(34,36,38,.15);
+// $global-border: rgba(34,36,38,.15);
+$global-border: lighten(#ce8b5c, 10%);
 
 
 // End Framework UIKit

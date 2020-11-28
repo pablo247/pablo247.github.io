@@ -14,6 +14,7 @@ let mix = require('laravel-mix');
 mix
 	.js('resources/js/public/app.js', 'dist/assets/js/')
 	.sass('resources/sass/public/app.scss', 'dist/assets/css/')
+	.copyDirectory('resources/images/', 'dist/assets/images/')
 	.copy('index.html', 'dist/index.html');
 
 // Full API

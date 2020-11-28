@@ -6,7 +6,7 @@ ARG VIRTUALHOST_FILE
 LABEL com.puebla.${CONTAINER_NAME} \
 	  com.puebla.author="Pablo De Jesús Moreno" \
 	  com.puebla.email="pablo.24726@gmail.com" \
-	  com.puebla.version="1.1.0" \
+	  com.puebla.version="1.2.0" \
 	  com.puebla.release-date="2020-09-09" \
 	  com.puebla.version.is-production="false"
 
@@ -138,5 +138,9 @@ RUN apt-get update \
 	# Install NodeJS
 	&& curl -sL https://deb.nodesource.com/setup_12.x | bash - \
     && apt-get install -y nodejs \
+	# Install GIT
+	&& apt-get install git \
+	# Install SSH
+	&& apt-get install openssh-server \
 	# Clear cache
 	&& apt-get clean && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/* /usr/share/doc/* /var/cache/*
