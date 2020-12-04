@@ -10,11 +10,11 @@
     "compile-uk-icons": "npm run --prefix ./node_modules/uikit compile-js",
     "uk-icons": "npm run install-uk-icons && npm run rm-uk-icons &&  npm run cp-uk-icons && npm run compile-uk-icons",
 
-    "dev": "npm run development",
+    "dev": "npm run uk-icons && npm run development",
     "development": "cross-env NODE_ENV=development node_modules/webpack/bin/webpack.js --progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js",
     "watch": "npm run development -- --watch",
     "hot": "cross-env NODE_ENV=development node_modules/webpack-dev-server/bin/webpack-dev-server.js --inline --hot --config=node_modules/laravel-mix/setup/webpack.config.js",
-    "prod": "npm run production",
+    "prod": "npm run uk-icons && npm run production",
     "production": "cross-env NODE_ENV=production node_modules/webpack/bin/webpack.js --no-progress --hide-modules --config=node_modules/laravel-mix/setup/webpack.config.js"
   },
   "repository": {

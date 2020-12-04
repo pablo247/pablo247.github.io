@@ -15,6 +15,7 @@ mix
 	.js('resources/js/public/app.js', 'dist/assets/js/')
 	.sass('resources/sass/public/app.scss', 'dist/assets/css/')
 	.copyDirectory('resources/images/', 'dist/assets/images/')
+	.copyDirectory('resources/docs/', 'dist/assets/docs/')
 	.copy('index.html', 'dist/index.html');
 
 // Full API

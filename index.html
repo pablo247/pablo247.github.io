@@ -12,7 +12,7 @@
 		<div class="uk-position-relative">
 			<div id="uk-sticky-menu" class="uk-margin-medium-bottom menu__sticky" uk-sticky>
 				<div class="uk-container">
-					<nav class="uk-navbar-container uk-navbar-transparent" uk-navbar>
+					<nav class="uk-visible@m uk-navbar-container uk-navbar-transparent" uk-navbar>
 						<div class="uk-navbar-right">
 							<ul class="uk-navbar-nav" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
 								<li><a href="#home">
@@ -36,31 +36,71 @@
 							</ul>
 						</div>
 					</nav>
+					<nav class="uk-hidden@m uk-navbar uk-navbar-container uk-navbar-transparent">
+						<div class="uk-navbar-right">
+							<div class="uk-navbar-left">
+								<a class="uk-navbar-toggle" uk-navbar-toggle-icon href="#main-menu" uk-toggle></a>
+							</div>
+						</div>
+					</nav>
+					<div id="main-menu" uk-offcanvas="overlay: true">
+						<div class="uk-offcanvas-bar uk-flex uk-flex-column">
+
+							<button class="uk-offcanvas-close" type="button" uk-close></button>
+
+							<ul class="uk-nav uk-nav-primary uk-nav-center uk-margin-auto-vertical uk-padding uk-padding-remove-left uk-padding-remove-right" uk-scrollspy-nav="closest: li; scroll: true; offset: 100">
+								<li><a href="#home">
+									<span>Home</span>
+								</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#perfil">
+									<span>Perfil</span>
+								</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#habilidades">
+									<span>Habilidades</span>
+								</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#educacion">
+									<span>Educación</span>
+								</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#tecnologias">
+									<span>Tecnologías</span>
+								</a></li>
+								<li class="uk-nav-divider"></li>
+								<li><a href="#experiencia">
+									<span>Experiencia Profesional</span>
+								</a></li>
+							</ul>
+
+						</div>
+					</div>
 				</div>
 			</div>
 			<div class="uk-container">
 				<div class="uk-grid-large" uk-grid>
 					<div class="uk-width-1-5@m uk-width-1-3@s uk-width-1-2 uk-margin-auto">
 						<div>
-							<img class="uk-border-rounded" src="assets/images/selfi.jpg" alt="Foto de Pablo De Jesús Moreno" tabindex="1">
+							<img class="uk-border-rounded" src="assets/images/selfi.jpg" alt="Foto de Pablo De Jesús Moreno" tabindex="0">
 						</div>
 					</div>
 					<div class="uk-width-3-4@m uk-width-1-1">
 						<div class="uk-text-right@m uk-text-center">
-							<h1 class="c-secondary-dark" tabindex="1">Pablo De Jesús Moreno</h1>
-							<p class="uk-h4 uk-border-pill uk-padding-small padding-40-right padding-40-left uk-display-inline-block b-solid-4-right b-solid-4-bottom c-secondary-dark" tabindex="1">Desarrollador de Software</p>
+							<h1 class="c-secondary-dark" tabindex="0">Pablo De Jesús Moreno</h1>
+							<p tabindex="0" class="uk-h4 uk-border-pill uk-padding-small padding-40-right padding-40-left uk-display-inline-block b-solid-4-right b-solid-4-bottom c-secondary-dark" tabindex="0">Desarrollador de Software</p>
 							<div class="uk-margin-top uk-flex-center uk-flex-right@m" uk-grid>
 								<div>
-									<a href="https://www.linkedin.com/in/pablo-de-jes%C3%BAs-578a281a9/" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: linkedin; ratio: 1.2" uk-tooltip="Linkedin"></a>
+									<a target="blank" href="https://www.linkedin.com/in/pablo-de-jes%C3%BAs-578a281a9/" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: linkedin; ratio: 1.2" uk-tooltip="Linkedin"></a>
 								</div>
 								<div>
-									<a href="https://github.com/pablo247" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: github; ratio: 1.2" uk-tooltip="Github"></a>
+									<a target="blank" href="https://github.com/pablo247" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: github; ratio: 1.2" uk-tooltip="Github"></a>
 								</div>
 								<div>
-									<a href="mailto:pablo.24726@gmail.com" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: mail; ratio: 1.2" uk-tooltip="Correo Electrónico"></a>
+									<a target="blank" href="mailto:pablo.24726@gmail.com" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: mail; ratio: 1.2" uk-tooltip="Correo Electrónico"></a>
 								</div>
 								<div>
-									<a href="#" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: cv; ratio: 1.2" uk-tooltip="Curriculum"></a>
+									<a target="blank" href="assets/docs/CV_Pablo_De_Jesus_Moreno.pdf" class="uk-icon-button c-secondary c-secondary-dark:h" uk-icon="icon: cv; ratio: 1.2" uk-tooltip="Curriculum"></a>
 								</div>
 							</div>
 						</div>
@@ -73,127 +113,127 @@
 		<div class="uk-container uk-margin-large">
 			<dir uk-grid class="uk-grid-divider">
 				<div class="uk-width-2-3@m uk-width-1-1">
-					<h2 id="perfil">Perfil</h2>
-					<p>Soy Ingeniero en Tecnologías de la Información y Comunicación y desde 2013 tengo experiencia en el desarrollo de software.</p>
-					<p>He colaborado en proyectos como Freelance, he auditado sitios web en busca de vulnerabilidades y he impartido un taller sobre el desarrollo web en la Universidad Tecnológica de Puebla.</p>
-					<p>Soy una persona comprometida con mi trabajo y me gusta estar actualizado y aprender nuevas tecnologías.</p>
+					<h2 tabindex="0" id="perfil">Perfil</h2>
+					<p tabindex="0">Soy Ingeniero en Tecnologías de la Información y Comunicación y desde 2013 tengo experiencia en el desarrollo de software.</p>
+					<p tabindex="0">He colaborado en proyectos como Freelancer, he auditado sitios web en busca de vulnerabilidades y he impartido un taller sobre el desarrollo web en la Universidad Tecnológica de Puebla.</p>
+					<p tabindex="0">Soy una persona comprometida con mi trabajo y me gusta estar actualizado y aprender nuevas tecnologías.</p>
 				</div>
 				<div class="uk-width-1-3@m uk-width-1-1">
-					<h2 id="habilidades">Habilidades</h2>
+					<h2 tabindex="0" id="habilidades">Habilidades</h2>
 					<ul class="uk-list uk-list-hyphen">
-						<li>Programación Web Frontend</li>
-						<li>Programación Web Backend</li>
-						<li>Maquetación Web</li>
-						<li>Seguridad Informatica</li>
-						<li>Servidores Linux</li>
-						<li>Ingles básico - intermedio</li>
+						<li tabindex="0">Programación Web Frontend</li>
+						<li tabindex="0">Programación Web Backend</li>
+						<li tabindex="0">Maquetación Web</li>
+						<li tabindex="0">Seguridad Informatica</li>
+						<li tabindex="0">Servidores Linux</li>
+						<li tabindex="0">Ingles básico - intermedio</li>
 					</ul>
 				</div>
 			</dir>
 		</div>
 		<div class="uk-container uk-margin-large">
-			<h2 id="educacion">Educación</h2>
+			<h2 tabindex="0" id="educacion">Educación</h2>
 			<ul class="uk-list uk-list-divider">
 				<li>
-					<p>
+					<p tabindex="0">
 						<b>Ingeniero en Tecnologías de la Información y Comunicación</b>
 						<span class="uk-margin-small-left uk-margin-small-right">|</span>
 						<b>2014 - 2016</b>
 					</p>
-					<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+					<p tabindex="0" class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
 				</li>
 				<li>
-					<p>
+					<p tabindex="0">
 						<b>Técnico Superior Universitario en Tecnologías de la Información y Comunicación</b>
 						<span class="uk-margin-small-left uk-margin-small-right">|</span>
 						<b>2012 - 2014</b>
 					</p>
-					<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+					<p tabindex="0" class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
 				</li>
 			</ul>
 		</div>
 		<div class="uk-container uk-margin-large">
-			<h2 id="tecnologias">Tecnologías</h2>
+			<h2 tabindex="0" id="tecnologias">Tecnologías</h2>
 			<div class="uk-column-1-4@m uk-column-1-2">
-				<p>HTML</p>
-				<p>CSS</p>
-				<p>Sass</p>
-				<p>JavaScript</p>
-				<p>JQuery</p>
-				<p>Vue</p>
-				<p>PHP</p>
-				<p>Laravel</p>
-				<p>Joomla</p>
-				<p>Python</p>
-				<p>Django</p>
-				<p>Java</p>
-				<p>Mysql</p>
-				<p>PostgreSQL</p>
-				<p>Elasticsearch</p>
-				<p>Git</p>
-				<p>Markdown</p>
-				<p>Sistemas operativos MSDOS y Unix</p>
-				<p>Servidores Linux (CentOS)</p>
-				<p>Seguridad Informática</p>
+				<p tabindex="0">HTML</p>
+				<p tabindex="0">CSS</p>
+				<p tabindex="0">Sass</p>
+				<p tabindex="0">JavaScript</p>
+				<p tabindex="0">JQuery</p>
+				<p tabindex="0">Vue</p>
+				<p tabindex="0">PHP</p>
+				<p tabindex="0">Laravel</p>
+				<p tabindex="0">Joomla</p>
+				<p tabindex="0">Python</p>
+				<p tabindex="0">Django</p>
+				<p tabindex="0">Java</p>
+				<p tabindex="0">Mysql</p>
+				<p tabindex="0">PostgreSQL</p>
+				<p tabindex="0">Elasticsearch</p>
+				<p tabindex="0">Git</p>
+				<p tabindex="0">Markdown</p>
+				<p tabindex="0">Sistemas operativos MSDOS y Unix</p>
+				<p tabindex="0">Servidores Linux (CentOS)</p>
+				<p tabindex="0">Seguridad Informática</p>
 			</div>
 		</div>
 		<div class="uk-container uk-margin-large">
-			<h2 id="experiencia">Experinecia Profesional</h2>
+			<h2 tabindex="0" id="experiencia">Experinecia Profesional</h2>
 			<div class="uk-container uk-container-small">
 				<ul class="uk-list uk-list-divider">
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Taller “Planificación y Desarrollo de un sitio web”</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2019, 07 Ene – 2019, 11 Ene</b>
 						</p>
-						<p class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
-						<p class="uk-margin-left">Taller impartido a los alumnos de 5° Cuatrimestre "Planificación y desarrollo de un sitio web".</p>
+						<p tabindex="0" class="uk-margin-left">Universidad Tecnológica de Puebla.</p>
+						<p tabindex="0" class="uk-margin-left">Taller impartido a los alumnos de 5° Cuatrimestre "Planificación y desarrollo de un sitio web".</p>
 					</li>
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Analista de Sistemas</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2016, Feb – Actual</b>
 						</p>
-						<p class="uk-margin-left">Secretaría de Administración del Gobierno del Estado de Puebla.</p>
-						<p class="uk-margin-left">Desarrollo, mantenimiento y seguridad de los portales de Gobierno del Estado de Puebla.</p>
+						<p tabindex="0" class="uk-margin-left">Secretaría de Administración del Gobierno del Estado de Puebla.</p>
+						<p tabindex="0" class="uk-margin-left">Desarrollo, mantenimiento y seguridad de los portales de Gobierno del Estado de Puebla.</p>
 					</li>
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Practicante de Sistemas</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2016, Ene – 2016, Abr</b>
 						</p>
-						<p class="uk-margin-left">Secretaría de Finanzas y Administración del Gobierno del Estado de Puebla.</p>
-						<p class="uk-margin-left">Accesibilidad a portales de Gobierno del Estado de Puebla.</p>
+						<p tabindex="0" class="uk-margin-left">Secretaría de Finanzas y Administración del Gobierno del Estado de Puebla.</p>
+						<p tabindex="0" class="uk-margin-left">Accesibilidad a portales de Gobierno del Estado de Puebla.</p>
 					</li>
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Desarrollador Web</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2014, May – 2015, May</b>
 						</p>
-						<p class="uk-margin-left">Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE).</p>
-						<p class="uk-margin-left">Página web en intranet para la “Evaluación en línea de algoritmos para el cálculo de testores irreducibles y reductos (TT-LAB)” y automatización de la evaluación de los algoritmos.</p>
+						<p tabindex="0" class="uk-margin-left">Instituto Nacional de Astrofísica, Óptica y Electrónica (INAOE).</p>
+						<p tabindex="0" class="uk-margin-left">Página web en intranet para la “Evaluación en línea de algoritmos para el cálculo de testores irreducibles y reductos (TT-LAB)” y automatización de la evaluación de los algoritmos.</p>
 					</li>
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Practicante de Sistemas</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2014, Ene – 2014 Abr</b>
 						</p>
-						<p class="uk-margin-left">T-Systems México, S.A. de C.V.</p>
-						<p class="uk-margin-left">Colaboración en diseño de página web interna.</p>
+						<p tabindex="0" class="uk-margin-left">T-Systems México, S.A. de C.V.</p>
+						<p tabindex="0" class="uk-margin-left">Colaboración en diseño de página web interna.</p>
 					</li>
 					<li>
-						<p>
+						<p tabindex="0">
 							<b>Desarrollador de Sistemas</b>
 							<span class="uk-margin-small-left uk-margin-small-right">|</span>
 							<b>2013, Sep – 2013 Dic</b>
 						</p>
-						<p class="uk-margin-left">Presidencia de la Comunidad de San Pedro, Tlaxcala.</p>
-						<p class="uk-margin-left">Desarrollo de sistema para el “Control del Agua Potable”.</p>
+						<p tabindex="0" class="uk-margin-left">Presidencia de la Comunidad de San Pedro, Tlaxcala.</p>
+						<p tabindex="0" class="uk-margin-left">Desarrollo de sistema para el “Control del Agua Potable”.</p>
 					</li>
 				</ul>
 			</div>
