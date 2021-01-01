@@ -34,9 +34,11 @@
   "devDependencies": {
     "copyfiles": "^2.4.0",
     "cross-env": "^7.0.2",
+    "firebase": "^8.2.1",
     "laravel-mix": "^5.0.6",
     "laravel-mix-merge-manifest": "^0.1.2",
-    "resolve-url-loader": "^3.1.0",
+    "moment": "^2.29.1",
+    "resolve-url-loader": "^3.1.2",
     "rimraf": "^3.0.2",
     "sass": "^1.27.0",
     "sass-loader": "^8.0.2",
