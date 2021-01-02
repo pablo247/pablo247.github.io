@@ -7,15 +7,21 @@ export default class Data {
 
 	async setData(Container, FunctionSetData)
 	{
-		await this.orderData();
+		await this.getData();
+		this.orderData();
 
 		this.AllData.forEach(data => {
 			Container.innerHTML += FunctionSetData(data);
 		});
 	}
 
-	async orderData() {
-		this.AllData = await this.FuctionName(this.collectionName);
+	orderData()
+	{
 		this.AllData.sort((data1, data2) => data1.order - data2.order);
+	}
+
+	async getData()
+	{
+		this.AllData = await this.FuctionName(this.collectionName);
 	}
 }

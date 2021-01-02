@@ -20,6 +20,7 @@ try {
 		// All HTML DOM elements are accessible
         if (event.target.readyState === "interactive")
         {
+            require('./data/links');
             require('./data/profile');
             require('./data/skills');
             require('./data/technologies');

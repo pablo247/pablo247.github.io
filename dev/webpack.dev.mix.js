@@ -15,7 +15,6 @@ mix
 	.js('resources/js/public/app.js', 'assets/js/')
 	.sass('resources/sass/public/app.scss', 'assets/css/')
 	.copyDirectory('resources/images/', 'assets/images/')
-	.copyDirectory('resources/docs/', 'assets/docs/')
 	.options({
         processCssUrls: false
     });
