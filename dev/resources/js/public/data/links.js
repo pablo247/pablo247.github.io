@@ -19,8 +19,6 @@ class DataLinks extends Data
 			GetObjectsDOM(IdObjectsDOM, ObjectsDOM);
 
 			ObjectsDOM.Container[data.attribute] = data.link;
-			console.log(data.link);
-			console.log(ObjectsDOM.Container);
 		});
 	}
 }
